@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer></script>
-    <title>Welcome to my Portfolio</title>
+    <title>Contact me</title>
 </head>
-<body id="bg-img">
+
+<body class="secondary-page">
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
@@ -20,7 +22,7 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
@@ -29,7 +31,7 @@
                 <li class="nav-item">
                     <a href="work.html" class="nav-link">My work</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="contact.html" class="nav-link">Contact me</a>
                 </li>
                 <li class="nav-item">
@@ -38,15 +40,39 @@
             </ul>
         </div>
     </header>
-    <main id="home">
-        <h1 class="lg-heading">Aghyad <span class="text-secondary">Al Logie</span></h1>
-        <h2 class="sm-heading">Web Developer, Programmer and Designer</h2>
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/aghyad-al-logie-57a2b778/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/aghyadallogie"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.xing.com/profile/Aghyad_AlLogie2/cv"><i class="fab fa-xing fa-2x"></i></a>
+    <main id="contact">
+        <h1 class="lg-heading">Contact <span class="text-secondary">me</span></h1>
+        <div class="boxes">
+            <div>
+                <span class="text-secondary">
+                    Email:
+                </span> zenlogie@vivaldi.net
+            </div>
+            <div>
+                <span class="text-secondary">
+                    Phone:
+                </span> +49 176 4360 8506
+            </div>
+            <div>
+                <span class="text-secondary">
+                    Address:
+                </span> Turmstr. 11 Berlin 10551
+            </div>
         </div>
+        <form action="https://formspree.io/xlepeadb" method="POST" >
+            <label for="_replyto">
+                Your email:
+                <input type="email" name="_replyto" id="_replyto">
+            </label></br>
+            <label for="message">
+                Your message:
+                <textarea name="message" id="message"></textarea>
+            </label>
+            <input type="submit"></input>
+        </form>
     </main>
+
     <footer id="main-footer">2020</footer>
 </body>
+
 </html>
